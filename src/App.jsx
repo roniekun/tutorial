@@ -7,7 +7,7 @@ import Footer from './components/footer'
 import Navigation from './components/navigation'
 
 const App = () => {
-  const [isMediumScreen, setMediumScreen] = useState(false)
+  const [isMediumScreen, setMediumScreen] = useState(window.innerWidth<=1024)
   const [isToggleMenu, setToggleMenu] = useState (false)
 
   useEffect(() => {
