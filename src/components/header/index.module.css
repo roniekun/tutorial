@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
     width: 100%;
 
 .logoContainer{
@@ -23,6 +24,7 @@
 }
 @media(max-width: 1024px){
     .container{
+        height: 60px;
         background-color: rgba(255, 255, 255, .1);
     }
 }
