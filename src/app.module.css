@@ -61,8 +61,6 @@
 
         .header{
             position: fixed;
-            mix-blend-mode: difference;
-            color: white;
             top:0;
             padding: 0;
         }

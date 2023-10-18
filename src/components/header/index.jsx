@@ -14,7 +14,7 @@ const Header = ({isMediumScreen, isToggleMenu, setToggleMenu}) => {
         <NavLink
             to='/'
              className={styles.logo}>
-                        <h1>&copy;Code by Ronie Benitez</h1>
+                        <h1>&copy;Code by Ronie </h1>
         </NavLink>
         </div>
      { isMediumScreen &&  
