@@ -5,10 +5,20 @@ import Sidebar from './components/sidebar'
 import Main from './components/main'
 import Footer from './components/footer'
 import Navigation from './components/navigation'
+import Lenis from '@studio-freight/lenis'
+
+
 
 const App = () => {
   const [isMediumScreen, setMediumScreen] = useState(window.innerWidth<=1024)
   const [isToggleMenu, setToggleMenu] = useState (false)
+  const lenis = new Lenis()
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 
   useEffect(() => {
 

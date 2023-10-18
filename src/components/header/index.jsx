@@ -10,14 +10,16 @@ const Header = ({isMediumScreen, isToggleMenu, setToggleMenu}) => {
   }
   return (
     <div className={styles.container}  >
+      <div className={styles.logoContainer}>
         <NavLink
             to='/'
              className={styles.logo}>
-                          Logo
+                        <h1>&copy;Code by Ronie Benitez</h1>
         </NavLink>
+        </div>
      { isMediumScreen &&  
      <div
-     style={{padding: '0', zIndex: '999'}}
+     style={{padding: '0', zIndex: '999', marginInline: '2%'}}
      onClick={handleClick}>
      <Hamburger
      toggled={isToggleMenu}
